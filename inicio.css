@@ -1,0 +1,291 @@
+body  {
+    font-family: open sans;
+    color: #ffffff;
+    background-color: #191919;
+    background-image: url(./Banco-de-imagens/terra.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-left: auto; margin-right: auto;
+      }
+
+
+
+#titulo{
+    position: relative;
+    top: 200px;
+    display: flex;
+    justify-self: center;
+    height: 600px;
+}
+                                                    @media (max-width: 970px) {
+                                                        #titulo {
+                                                            
+                                                            display: flex;
+                                                            justify-self: center;
+                                                            height: 600px;
+                                                            font-size: 100%;                      
+                                                        }}
+
+
+.title1{
+    color: #FFC107;
+    font-size: 800%;
+    font-weight: 800;
+    position: sticky;
+    top: 20px;
+}   
+ 
+
+                                                
+                                                    
+                                                    @media (max-width: 970px) {
+                                                        .title1 {
+                                                            margin-left: auto; margin-right: auto;   
+                                                            font-size: 500%;}}
+                                                    @media (max-width: 670px) {
+                                                        .title1 {
+                                                        margin-left: auto; margin-right: auto;
+                                                        font-size: 300%;
+                                                        margin-top: 80px;                             
+                                                        }}
+                                                    @media (max-width: 470px) {
+                                                        .title1 {
+                                                        margin-left: auto; margin-right: auto;
+                                                        font-size: 200%;   
+                                                        margin-top: 80px;                          
+                                                        }}
+                                                        
+                                                        
+
+
+.title2{
+    
+    font-size: 800%;
+    font-weight: 100;
+    position: sticky;
+    top: 20px;
+}   
+                                                    @media (max-width: 970px) {
+                                                        .title2 {
+                                                        margin-left: auto; margin-right: auto;
+                                                        font-size: 500%;
+                                                        margin-top: 80px; 
+                                                        }}
+                                                        
+                                                    @media (max-width: 670px) {
+                                                        .title2 {
+                                                        margin-left: auto; margin-right: auto;
+                                                        font-size: 300%;
+                                                        margin-top: 80px;                             
+                                                        }}
+                                                    @media (max-width: 470px) {
+                                                        .title2 {
+                                                        margin-left: auto; margin-right: auto;
+                                                        font-size: 200%;   
+                                                        margin-top: 80px;                          
+                                                        }}
+                            
+
+                            
+
+                            
+
+                                                    .lugares {
+                                                        position: relative;
+                                                        top: 350px;
+                                                        display: block;
+                                                        justify-self: center;
+                                                        
+                                                        width: 1400px;
+                                                        justify-content: space-around;}
+
+                                                        @media (max-width: 1440px) {
+                                                            .lugares {
+                                                            display: block;
+                                                            justify-self: center;
+                                                            width: 600px;                       
+                                                            }}
+                                                        @media (max-width: 670px) {
+                                                            .lugares {
+                                                            display: block;
+                                                            justify-self: center;
+                                                            width: 400px; }}
+
+
+                                                        @media (max-width: 1440px) {
+                                                            .size {
+                                                            display: block;
+                                                            justify-self: center;
+                                                            padding: 5px;
+                                                            margin: 5px;                      
+                                                            }}
+
+                                    
+                           
+
+                                
+                                
+                        
+                                
+
+
+                                                            
+
+.busan {
+        background-image:   linear-gradient(rgba(0, 0, 0, 0.670), rgba(0, 0, 0, 0.670)),
+                            url(./Banco-de-imagens/card/busan.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: none;
+        color: #fff;
+        padding: 150px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 50px;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: transform 0.5s ease;
+        
+        
+}
+        @keyframes pulse {
+            0% {
+              transform: scale(1);
+            }
+            50% {
+              transform: scale(1.1);
+            }
+            100%{
+                transform: scale(1);
+            }
+            }         
+          .busan:hover {
+              animation: pulse 2s infinite;      
+        }
+  
+
+.dublin {
+    background-image:   linear-gradient(rgba(0, 0, 0, 0.670), rgba(0, 0, 0, 0.670)), 
+                        url(./Banco-de-imagens/card/dublin.png);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    color: #fff;
+    padding: 150px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 50px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.5s ease;
+    
+    
+}
+.dublin:hover {
+    animation: pulse 2s infinite;        
+}
+
+
+.roma {
+    background-image:   linear-gradient(rgba(0, 0, 0, 0.670), rgba(0, 0, 0, 0.670)), 
+                        url(./Banco-de-imagens/card/roma.png);
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    color: #fff;
+    padding: 150px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 50px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.5s ease;
+    
+    
+}
+.roma:hover {
+    animation: pulse 2s infinite;        
+}
+
+
+.paris {
+    background-image:   linear-gradient(rgba(0, 0, 0, 0.670), rgba(0, 0, 0, 0.670)), 
+                        url(./Banco-de-imagens/card/paris.png);
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    color: #fff;
+    padding: 150px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 50px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.5s ease;
+    
+    
+}
+.paris:hover {
+    animation: pulse 2s infinite;        
+}
+
+
+.toronto {
+    background-image:   linear-gradient(rgba(0, 0, 0, 0.670), rgba(0, 0, 0, 0.670)), 
+                        url(./Banco-de-imagens/card/toronto.png);
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    color: #fff;
+    padding: 150px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 50px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.5s ease;
+    
+    
+}
+.toronto:hover {
+    animation: pulse 2s infinite;        
+}
+
+
+.grecia {
+    background-image:   linear-gradient(rgba(0, 0, 0, 0.670), rgba(0, 0, 0, 0.670)), 
+                        url(./Banco-de-imagens/card/grecia.png);
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    color: #fff;
+    padding: 150px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 50px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.5s ease;
+    
+    
+}
+.grecia:hover {
+    animation: pulse 2s infinite;        
+}

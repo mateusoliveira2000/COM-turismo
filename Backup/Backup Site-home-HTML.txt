@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.COM Solução em Tecnologia</title>
+
+    <link rel="stylesheet" href="COM.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div>
+        <main id="inicial">
+            <h2 id="h2-nome">.COM</h2>
+            <h2 id="h2-descri">Gestão impresarial</h2>
+        </main>
+        <nav>
+            <a id="acessar-prod" href="./Produção.html">&nbsp;&nbsp;Acessar&nbsp;&nbsp;</a>
+        </nav>
+    </div>
+</body>
+</html>

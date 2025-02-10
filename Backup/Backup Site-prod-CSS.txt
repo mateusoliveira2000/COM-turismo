@@ -1,0 +1,81 @@
+body  {
+        margin: 0px;
+        background-color: rgb(255, 255, 255);
+      }
+
+#menu {
+        background-color: rgb(40, 41, 59);
+        background-size: 100%;
+        background-position: center;
+        height: 70px;
+        background-repeat: no-repeat;
+      }
+
+#link     {
+        color: white;
+        font-family: "Open Sans";
+        text-transform: uppercase;
+        padding: 24px;
+        padding-left: 1cm; padding-right: 1cm;
+        text-decoration-line: none;
+      } 
+      
+#logo {
+        position: absolute;
+        left: 30px; bottom: 841px;
+        width: 130px; height: 70px;
+      }      
+
+
+
+.estoque {
+        position: absolute;
+        left: 300px; bottom: 838px;
+        color: white;
+        font-family: "Open Sans";
+        text-transform: uppercase;
+        padding: 24px;
+        padding-left: 1cm; padding-right: 1cm;
+        text-decoration-line: none;
+      }      
+.cad {
+        position: absolute;
+        left: 500px; bottom: 838px;
+        color: white;
+        font-family: "Open Sans";
+        text-transform: uppercase;
+        padding: 24px;
+        padding-left: 1cm; padding-right: 1cm;
+        text-decoration-line: none;
+      }      
+.mov {
+        position: absolute;
+        left: 825px; bottom: 838px;
+        color: white;
+        font-family: "Open Sans";
+        text-transform: uppercase;
+        padding: 24px;
+        padding-left: 1cm; padding-right: 1cm;
+        text-decoration-line: none;
+      }      
+.ndoc {
+        position: absolute;
+        left: 1070px; bottom: 838px;
+        color: white;
+        font-family: "Open Sans";
+        text-transform: uppercase;
+        padding: 24px;
+        padding-left: 1cm; padding-right: 1cm;
+        text-decoration-line: none;        
+      }      
+.sair {
+        color: rgb(40, 41, 59);
+        background-color: white;
+        padding: 14px;
+        padding-left: 45px; padding-right: 80px;
+        position: absolute;
+        left: 1750px; right: 1800px; bottom: 850px;
+        text-decoration-line: none;
+        font-family: "Open Sans";
+        border-radius: 30px;
+      }

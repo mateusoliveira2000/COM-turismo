@@ -1,0 +1,51 @@
+/*width: LARGURA; height: ALTURA;*/
+
+body {
+    background-size: 100%;
+    background-image: url(./banco-de-imagens/capa-inicial.png);
+    background-repeat: no-repeat;
+    background-color: black;
+             }
+
+#inicial {
+        color: rgb(255, 255, 255);
+        width: 900px; height: 300px;
+         }
+        
+#h2-nome {
+        font-size: 121px;
+        font-family: 'lexend giga';
+        font-weight: 400;
+        position: relative;
+        top: 200px; bottom: 0px; left: 250px; right: 0px;
+        width: 450px; height: 150px; /*REGULA O TAMANHO DO TEXTO PARA EVITAR QUE FIQUE UMA BORDA BRANCA AO LADO DA PAGINA*/
+        
+         }
+
+#h2-descri {
+    color: white;
+        position: relative;
+        top: 85px; left: 261px;
+        font-family: 'lexend giga';
+        font-weight: 300;
+        text-transform: uppercase;
+        width: 450px; height: 40px; /*REGULA O TAMANHO DO TEXTO PARA EVITAR QUE FIQUE UMA BORDA BRANCA AO LADO DA PAGINA*/
+        letter-spacing: 1.5px; 
+           }
+           
+#acessar-prod {
+        color: black;
+        background-color: white;
+        width: 4cm; height: 10px;
+        font-size: 20px; top: 100px;
+        position: relative;
+        left: 370px;
+        font-family: "Open Sans";
+        font-weight: 500;
+        text-decoration-line: none;
+        border: 20px solid;
+        border-color: rgb(255, 255, 255);
+        border-radius: 30px;
+              }
+
+ 
