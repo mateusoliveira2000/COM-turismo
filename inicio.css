@@ -14,7 +14,6 @@ body  {
     margin-left: auto; margin-right: auto;
     width: 60%; height: 350px;
     position: relative; top: 10px;
-    border: solid;
 }
 @media (max-width: 920px){
     #pai {
@@ -41,7 +40,6 @@ body  {
     justify-content: center; justify-content: space-around;
     border-radius: 30px;
     position: sticky; top: 5px;
-    border: solid;
     font-size: 100%;
 }
 @media (max-width: 920px){
