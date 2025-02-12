@@ -10,117 +10,203 @@ body  {
 
 
 
-#titulo{
+#pai{
+    margin-left: auto; margin-right: auto;
+    width: 60%; height: 350px;
+    position: relative; top: 10px;
+    border: solid;
+}
+@media (max-width: 920px){
+    #pai {
+        width: 70%;
+    }}
+@media (max-width: 660px){
+    #pai {
+            width: 80%;
+    }}
+@media (max-width: 660px){
+    #pai {
+            width: 95%;
+    }}
+@media (max-width: 380px){
+    #pai {
+            width: 95%; height: 600px;
+    }}
+#header {
+    text-align: center;
+    background-color: #FFC107;
+    width: 100%; height: 50px;
+    margin-left: auto; margin-right: auto;
+    display: flex;
+    justify-content: center; justify-content: space-around;
+    border-radius: 30px;
+    position: sticky; top: 5px;
+    border: solid;
+    font-size: 100%;
+}
+@media (max-width: 920px){
+    #header {
+        font-size: 12px;
+        height: 45px;
+    }
+}
+@media (max-width: 380px){
+    #header{
+            flex-direction: column;
+            width: 80px; height: 300px;
+            text-align: center;
+            margin-right: 100%;
+    }}
+.logo{
+    background-image: url(./Banco-de-imagens/button/logo.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20px; height: 20px;
+    border: none;
+    padding: 10px;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+    text-align: center;
+}
+@media (max-width: 920px){
+    .logo {
+        padding: 8px;
+    }
+}
+.nav {
+    color: #ffffff;
+    text-decoration-line: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 15px;
+}
+@media (max-width: 660px){
+    .nav {
+        padding-left: 10px; padding-right: 10px;
+    }}
+@media (max-width: 430px){
+    .nav {
+        padding-left: 5px; padding-right: 5px;
+    }}
+
+
+
+#titulo {
     position: relative;
     top: 200px;
     display: flex;
     justify-self: center;
     height: 600px;
 }
-                                                    @media (max-width: 970px) {
-                                                        #titulo {
-                                                            
-                                                            display: flex;
-                                                            justify-self: center;
-                                                            height: 600px;
-                                                            font-size: 100%;                      
-                                                        }}
-
+@media (max-width: 970px) {
+    #titulo {
+        display: flex;
+        justify-self: center;
+        height: 600px;
+        font-size: 100%;                      
+    }}
+@media (max-width: 380px){
+    #titulo{
+            margin-left: 80px;
+        }}
 
 .title1{
     color: #FFC107;
     font-size: 800%;
     font-weight: 800;
-    position: sticky;
-    top: 20px;
+    position: relative;
+    bottom: 300px;
 }   
- 
-
-                                                
-                                                    
-                                                    @media (max-width: 970px) {
-                                                        .title1 {
-                                                            margin-left: auto; margin-right: auto;   
-                                                            font-size: 500%;
-                                                            margin-top: 80px; 
-                                                        }}
-                                                    @media (max-width: 670px) {
-                                                        .title1 {
-                                                        margin-left: auto; margin-right: auto;
-                                                        font-size: 300%;
-                                                        margin-top: 80px;                             
-                                                        }}
-                                                    @media (max-width: 470px) {
-                                                        .title1 {
-                                                        margin-left: auto; margin-right: auto;
-                                                        font-size: 200%;   
-                                                        margin-top: 80px;                          
-                                                        }}
-                                                        
-                                                        
+@media (max-width: 970px) {
+    .title1 {
+        margin-left: auto; margin-right: auto;   
+        font-size: 500%;
+        margin-top: 120px; 
+    }}
+@media (max-width: 670px) {
+    .title1 {
+    margin-left: auto; margin-right: auto;
+    font-size: 300%;
+    margin-top: 130px;                             
+    }}
+@media (max-width: 470px) {
+    .title1 {
+    margin-left: auto; margin-right: auto;
+    font-size: 200%;   
+    margin-top: 150px;                          
+    }}
+@media (max-width: 380px){
+    .title1{
+            margin-top: 10px;
+    }}
+    
 
 
 .title2{
-    
     font-size: 800%;
     font-weight: 100;
-    position: sticky;
-    top: 20px;
+    position: relative;
+    bottom: 300px;
 }   
-                                                    @media (max-width: 970px) {
-                                                        .title2 {
-                                                        margin-left: auto; margin-right: auto;
-                                                        font-size: 500%;
-                                                        margin-top: 80px; 
-                                                        }}
-                                                        
-                                                    @media (max-width: 670px) {
-                                                        .title2 {
-                                                        margin-left: auto; margin-right: auto;
-                                                        font-size: 300%;
-                                                        margin-top: 80px;                             
-                                                        }}
-                                                    @media (max-width: 470px) {
-                                                        .title2 {
-                                                        margin-left: auto; margin-right: auto;
-                                                        font-size: 200%;   
-                                                        margin-top: 80px;                          
-                                                        }}
+@media (max-width: 970px) {
+    .title2 {
+    margin-left: auto; margin-right: auto;
+    font-size: 500%;
+    margin-top: 120px; 
+    }}
+@media (max-width: 670px) {
+    .title2 {
+    margin-left: auto; margin-right: auto;
+    font-size: 300%;
+    margin-top: 130px;                             
+    }}
+@media (max-width: 470px) {
+    .title2 {
+    margin-left: auto; margin-right: auto;
+    font-size: 200%;   
+    margin-top: 150px;                          
+    }}
+@media (max-width: 380px){
+    .title2{
+        margin-top: 10px;
+    }}
                             
 
                             
 
                             
 
-                                                    .lugares {
-                                                        position: relative;
-                                                        top: 350px;
-                                                        display: block;
-                                                        justify-self: center;
-                                                        
-                                                        width: 1400px;
-                                                        justify-content: space-around;}
+#lugares {
+    position: relative;
+    top: 350px;
+    display: block;
+    justify-self: center;
+    
+    width: 1400px;
+    justify-content: space-around;}
 
-                                                        @media (max-width: 1440px) {
-                                                            .lugares {
-                                                            display: block;
-                                                            justify-self: center;
-                                                            width: 600px;                       
-                                                            }}
-                                                        @media (max-width: 670px) {
-                                                            .lugares {
-                                                            display: block;
-                                                            justify-self: center;
-                                                            width: 400px; }}
-
-
-                                                        @media (max-width: 1440px) {
-                                                            .size {
-                                                            display: block;
-                                                            justify-self: center;
-                                                            padding: 5px;
-                                                            margin: 5px;                      
-                                                            }}
+    @media (max-width: 1440px) {
+        #lugares {
+        display: block;
+        justify-self: center;
+        width: 600px;                       
+        }}
+    @media (max-width: 670px) {
+        #lugares {
+        display: block;
+        justify-self: center;
+        width: 400px; }}
+    @media (max-width: 1440px) {
+        .size {
+        display: block;
+        justify-self: center;
+        padding: 5px;
+        margin: 5px;                      
+        }}
 
                                     
                            
@@ -131,7 +217,7 @@ body  {
                                 
 
 
-                                                            
+        
 
 .busan {
         background-image:   linear-gradient(rgba(0, 0, 0, 0.670), rgba(0, 0, 0, 0.670)),
