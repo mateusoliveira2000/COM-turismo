@@ -195,7 +195,6 @@ body  {
 
 #lugares {
     margin-left: auto; margin-right: auto;
-    border: solid;
     position: relative;
     top: 350px;
     display: grid;
@@ -233,6 +232,7 @@ body  {
     text-transform: uppercase;
     font-family: Josefin Sans;
     font-size: 30px;
+    margin-top: 50px; margin-bottom: 50px;
     background-image:   linear-gradient(rgba(0, 0, 0, 0.670), rgba(0, 0, 0, 0.670)),
                         url(./Banco-de-imagens/card/busan.png);
     background-size: cover;
@@ -280,6 +280,7 @@ body  {
     text-transform: uppercase;
     font-family: Josefin Sans;
     font-size: 30px;
+    margin-top: 50px; margin-bottom: 50px;
     background-image:   linear-gradient(rgba(0, 0, 0, 0.670), rgba(0, 0, 0, 0.670)), 
     url(./Banco-de-imagens/card/dublin.png);
     background-size: cover;
@@ -318,6 +319,7 @@ body  {
     text-transform: uppercase;
     font-family: Josefin Sans;
     font-size: 30px;
+    margin-top: 50px; margin-bottom: 50px;
     background-image:   linear-gradient(rgba(0, 0, 0, 0.670), rgba(0, 0, 0, 0.670)), 
                         url(./Banco-de-imagens/card/roma.png);
     background-size: cover;
@@ -357,6 +359,7 @@ body  {
     text-transform: uppercase;
     font-family: Josefin Sans;
     font-size: 30px;
+    margin-top: 50px; margin-bottom: 50px;
     background-image:   linear-gradient(rgba(0, 0, 0, 0.670), rgba(0, 0, 0, 0.670)), 
                         url(./Banco-de-imagens/card/paris.png);
     background-size: cover;
@@ -395,6 +398,7 @@ body  {
     text-transform: uppercase;
     font-family: Josefin Sans;
     font-size: 30px;
+    margin-top: 50px; margin-bottom: 50px;
     background-image:   linear-gradient(rgba(0, 0, 0, 0.670), rgba(0, 0, 0, 0.670)), 
                         url(./Banco-de-imagens/card/toronto.png);
     background-size: cover;
@@ -433,6 +437,7 @@ body  {
     text-transform: uppercase;
     font-family: Josefin Sans;
     font-size: 30px;
+    margin-top: 50px; margin-bottom: 50px;
     background-image:   linear-gradient(rgba(0, 0, 0, 0.670), rgba(0, 0, 0, 0.670)), 
                         url(./Banco-de-imagens/card/grecia.png);
     background-size: cover;
