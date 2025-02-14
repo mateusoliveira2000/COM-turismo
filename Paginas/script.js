@@ -46,6 +46,6 @@ window.addEventListener("load", () => {
     setTimeout(() => {
         preloader.style.display = "none";
         document.querySelector(".content").style.display = "block"; // Mostra o conteúdo
-    }, 500);
+    }, 200);
 });
 
