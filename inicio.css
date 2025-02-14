@@ -9,9 +9,9 @@ body  {
     transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
       }
 
-/* styles.css */
+/*styles.css
 
-/* Estiliza o preloader */
+/* Estiliza o preloader
 #carregar {
     position: fixed;
     width: 100%;
@@ -23,7 +23,7 @@ body  {
     z-index: 9999;
 }
 
-/* Loader animado (círculo girando) */
+/* Loader animado (círculo girando) 
 .loader {
     width: 50px;
     height: 50px;
@@ -33,7 +33,7 @@ body  {
     animation: spin 1s linear infinite;
 }
 
-/* Animação de rotação */
+/* Animação de rotação 
 @keyframes spin {
     from {
         transform: rotate(0deg);
@@ -43,10 +43,10 @@ body  {
     }
 }
 
-/* Esconde o conteúdo enquanto carrega */
+/* Esconde o conteúdo enquanto carrega 
 .content {
     display: none;
-}
+}*/
 
 
 
