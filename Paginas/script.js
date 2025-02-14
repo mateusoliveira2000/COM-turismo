@@ -37,7 +37,7 @@ toggleButton.addEventListener("click", () => {
     }
 });
 
-// Aguarda o carregamento completo da página
+/*// Aguarda o carregamento completo da página
 window.addEventListener("load", () => {
     const preloader = document.getElementById("carregar");
     preloader.style.opacity = "0"; // Suaviza a saída
@@ -47,5 +47,4 @@ window.addEventListener("load", () => {
         preloader.style.display = "none";
         document.querySelector(".content").style.display = "block"; // Mostra o conteúdo
     }, 200);
-});
-
+});*/
