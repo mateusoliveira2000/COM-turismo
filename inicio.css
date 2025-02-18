@@ -19,24 +19,22 @@ body  {
 
 /* Estilo do botão */
 #toggleMode {
-    background-color: #FFC107;
+    background-color: #fa621b;
     background-image: url(./Banco-de-imagens/button/Modo.svg);
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     color: white;
     border: solid;
-    border-color: #FFC107;
-    width: 50px; height: 100%;
-    font-size: 16px;
+    border-color: #fa621b;
+    width: 45px; height: 100%;
     cursor: pointer;
     border-radius: 30px;
-    transition: 0.3s;
-    
+    transition: 0.5s;
 }
 
-button:hover {
-    background-color: #555;
+#toggleMode:hover {
+    transform: rotate(360deg)
 }
 
 
@@ -66,7 +64,7 @@ button:hover {
     }}
 #header {
     text-align: center;
-    background-color: #FFC107;
+    background-color: #fa621b;
     width: 100%; height: 50px;
     margin-left: auto; margin-right: auto;
     display: flex;
@@ -121,6 +119,7 @@ button:hover {
     font-weight: 700;
     padding: 15px;
     transition: 0.3s ease-in-out;
+    
 }
 @media (max-width: 660px){
     .nav {
@@ -134,8 +133,11 @@ button:hover {
     .nav{
             font-size: 10px;
     }}
-
-
+html {
+    scroll-behavior: smooth;
+  }
+      
+    
 
 #titulo {
     position: relative;
@@ -160,12 +162,13 @@ button:hover {
     text-decoration: none;
 }
 .nav:hover {
-    background-color: #a87e00;
+    background-color: #ed8544;
+    border-radius: 30px;
 }
 
 
 .title1{
-    color: #FFC107;
+    color: #fa621b;
     font-size: 800%;
     font-weight: 800;
     position: relative;
@@ -271,6 +274,9 @@ button:hover {
             width: 200px; height: 1100px;
         }}
   
+.size{
+    margin-top: 100px;
+}
                            
 .busan {
     width: 270px; height: 160px;
