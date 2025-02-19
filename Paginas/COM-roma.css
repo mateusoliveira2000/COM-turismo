@@ -2,25 +2,31 @@ body {
   margin-left: 5%; margin-right: 5%;
   background-color: white;
   font-family: Century Gothic;
+  transition: 0.5s;
 }
+
 #conteudo {
   position: absolute;
   margin-left: auto; margin-right: auto;
-  width: 90%; height: 7000px;
+  width: 90%; height: 6200px;
 }
 
 
 .modo{
+  position: sticky;
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 100px;
     margin-left: 10%;
+    border-radius: 30px;
+    left: 89%;
 }  
 /* styles.css */
 .dark-mode {
     background-color: #191919;
     color: white;
+    transition: 0.5s;
   }
   /* Estilo do botão */
   #toggleMode {
@@ -35,7 +41,7 @@ body {
     width: 30px; height: 30px;
     cursor: pointer;
     border-radius: 30px;
-    transition: 0.5s;
+    transition: 1.0s;
   }
   #toggleMode:hover {
     transform: rotate(360deg)
