@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Maps Interativo</title>
+    <style>
+        #map { height: 100vh; width: 100%; }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+
+    <script>
+        function initMap() {
+            const location = { lat: -23.55052, lng: -46.633308 }; // São Paulo
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 10,
+                center: location,
+            });
+
+            const marker = new google.maps.Marker({
+                position: location,
+                map: map,
+                title: "São Paulo",
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhQXWMNjey3HscKFgyTt-ll_t6SJ9wt0U&callback=initMap"></script>
+</body>
+</html>
