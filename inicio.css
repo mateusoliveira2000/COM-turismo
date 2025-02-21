@@ -1,8 +1,8 @@
 body  {
     font-family: Century Gothic;
-    color: #191919;
-    background-color: #f1f1f1;
-    background-image: url(./Banco-de-imagens/terra1.png);
+    color: #ffffff;
+    background-color: #191919;
+    background-image: url(./Banco-de-imagens/terra.png);
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 0px;
@@ -12,9 +12,9 @@ body  {
 
 /* styles.css */
 .dark-mode {
-    background-image: url(./Banco-de-imagens/terra.png);
-    background-color: #191919;
-    color: white;
+    background-image: url(./Banco-de-imagens/terra1.png);
+    background-color: #ffffff;
+    color: #191919;
 }
 
 /* Estilo do botão */
