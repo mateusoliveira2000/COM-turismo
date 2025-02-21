@@ -1,49 +1,66 @@
+let map;
+let marker;
+let currentButton = null; // Para rastrear o botão ativo
 
-        // 1️⃣ Criar a cena
-        const scene = new THREE.Scene();
+// Coordenadas das cidades
+const cities = {
+    busan: { lat: 35.1796, lng: 129.0756, name: "Busan, Coreia do Sul" },
+    dublin: { lat: 53.3498, lng: -6.2603, name: "Dublin, Irlanda" },
+    roma: { lat: 41.9028, lng: 12.4964, name: "Roma, Itália" },
+    paris: { lat: 48.8566, lng: 2.3522, name: "Paris, França" },
+    toronto: { lat: 43.65107, lng: -79.347015, name: "Toronto, Canadá" },
+    grecia: { lat: 37.9838, lng: 23.7275, name: "Atenas, Grécia" }
+};
 
-        // 2️⃣ Criar a câmera
-        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-        camera.position.set(0, 2, 5); // Ajusta posição inicial
+// Inicializar o mapa
+function initMap() {
+    map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 5,
+        center: cities.paris, // Começa em Paris
+        mapTypeId: 'roadmap'
+    });
 
-        // 3️⃣ Criar o renderizador
-        const renderer = new THREE.WebGLRenderer({ antialias: true });
-        renderer.setSize(window.innerWidth, window.innerHeight);
-        document.body.appendChild(renderer.domElement);
+    marker = new google.maps.Marker({
+        position: cities.paris,
+        map: map,
+        title: "Paris, França"
+    });
+}
 
-        // 4️⃣ Controles de órbita
-        const controls = new THREE.OrbitControls(camera, renderer.domElement);
-        controls.enableDamping = true;
+// Função para mover o mapa com animação
+function goToCity(cityKey, button) {
+    if (!cities[cityKey]) return;
 
-        // 5️⃣ Adicionar iluminação
-        const ambientLight = new THREE.AmbientLight(0xffffff, 0.5); // Luz suave
-        scene.add(ambientLight);
+    const city = cities[cityKey];
 
-        const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
-        directionalLight.position.set(5, 10, 5);
-        scene.add(directionalLight);
+    // Alterar cor do botão ativo
+    if (currentButton) currentButton.classList.remove("active");
+    button.classList.add("active");
+    currentButton = button;
 
-        // 6️⃣ Carregar o modelo GLTF/GLB
-        const loader = new THREE.GLTFLoader();
-        loader.load('modelo.glb', (gltf) => {
-            const model = gltf.scene;
-            model.position.set(0, 0, 0);
-            scene.add(model);
-        }, undefined, (error) => {
-            console.error("Erro ao carregar o modelo", error);
-        });
+    // Criar uma animação de deslocamento pelo mapa
+    const steps = 50; // Quantidade de passos na animação
+    let step = 0;
+    const startLat = map.getCenter().lat();
+    const startLng = map.getCenter().lng();
 
-        // 7️⃣ Animação
-        function animate() {
-            requestAnimationFrame(animate);
-            controls.update();
-            renderer.render(scene, camera);
+    function animateMovement() {
+        if (step >= steps) {
+            map.setCenter(city); // Garante que o mapa termina na posição exata
+            map.setZoom(10);
+            marker.setPosition(city);
+            marker.setTitle(city.name);
+            return;
         }
-        animate();
 
-        // 8️⃣ Ajustar responsividade
-        window.addEventListener('resize', () => {
-            renderer.setSize(window.innerWidth, window.innerHeight);
-            camera.aspect = window.innerWidth / window.innerHeight;
-            camera.updateProjectionMatrix();
-        });
+        // Calcular a posição intermediária
+        const lat = startLat + (city.lat - startLat) * (step / steps);
+        const lng = startLng + (city.lng - startLng) * (step / steps);
+
+        map.panTo({ lat, lng });
+        step++;
+        setTimeout(animateMovement, 30); // Controla a velocidade da transição
+    }
+
+    animateMovement();
+}

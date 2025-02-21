@@ -3,29 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Maps Interativo</title>
-    <style>
-        #map { height: 100vh; width: 100%; }
-    </style>
+    <title>Mapa</title>
+
+    <link rel="stylesheet" href="mapa.css">
+    <script src="./mapa.js"></script>
 </head>
 <body>
-    <div id="map"></div>
+    <main id="conteudo">
+        <section id="home-mode">
+            <a href="../index.html"><button class="ir-inicio"></button></a>
+            <button id="toggleMode"></button>
+        </section>
 
-    <script>
-        function initMap() {
-            const location = { lat: -23.55052, lng: -46.633308 }; // São Paulo
-            const map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 10,
-                center: location,
-            });
+        <section id="espaco">  
+            <h1 id="tema1">mapa do</h1>
+            <h1 id="tema2">turismo</h1>
+        </section>
 
-            const marker = new google.maps.Marker({
-                position: location,
-                map: map,
-                title: "São Paulo",
-            });
-        }
-    </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhQXWMNjey3HscKFgyTt-ll_t6SJ9wt0U&callback=initMap"></script>
+        <section id="botao-baixo">
+            <a class="baixo" href="#buttons"></a>
+        </section>
+
+        <section id="header">
+            <div class="contain">            
+                <div id="buttons">
+                    <button id="botao-map" onclick="goToCity('busan', this)">Busan</button>
+                    <button id="botao-map" onclick="goToCity('dublin', this)">Dublin</button>
+                    <button id="botao-map" onclick="goToCity('roma', this)">Roma</button>
+                    <button id="botao-map" onclick="goToCity('paris', this)">Paris</button>
+                    <button id="botao-map" onclick="goToCity('toronto', this)">Toronto</button>
+                    <button id="botao-map" onclick="goToCity('grecia', this)">Grécia</button>
+                </div>
+                    <div>
+                            <script src="../Paginas/script.js"></script>
+                    </div>
+            </div>
+                <div id="map"></div>
+        </section>
+
+        <section id="footer">
+                <div id="credito-topo">
+                    <p class="credito">por: <strong>mateus oliveira</strong></p>
+                    <a href="#"><button class="ir-topo"></button></a> 
+                </div>
+        </section>
+            
+            <!-- API do Google Maps -->
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhQXWMNjey3HscKFgyTt-ll_t6SJ9wt0U&callback=initMap"></script>
+    </main>
 </body>
 </html>
