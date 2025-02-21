@@ -1,10 +1,10 @@
 body {
   margin-left: 5%; margin-right: 5%;
-  background-color: white;
+  background-color: #191919;
+  color: #ffffff;
   font-family: Century Gothic;
   transition: 0.5s;
 }
-
 #conteudo {
   position: absolute;
   margin-left: auto; margin-right: auto;
@@ -24,10 +24,10 @@ body {
 }  
 /* styles.css */
 .dark-mode {
-    background-color: #191919;
-    color: white;
-    transition: 0.5s;
-  }
+  background-color: #ffffff;
+  color: #191919;
+  transition: 0.5s;
+}
   /* Estilo do botão */
   #toggleMode {
     background-color: #fa621b;

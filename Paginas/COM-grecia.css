@@ -1,8 +1,9 @@
 body {
     margin-left: 5%; margin-right: 5%;
-    background-image: url(../Banco-de-imagens/terra1.png);
-    background-color: white;
+    background-image: url(../Banco-de-imagens/terra.png);
+    background-color: #191919;
     background-size: 100%;
+    color: #ffff;
     font-family: Century Gothic;
     transition: 0.5s;
   }
@@ -21,10 +22,10 @@ body {
 }
    /* styles.css */
 .dark-mode {
-    background-color: #191919;
-    background-image: url(../Banco-de-imagens/terra.png);
+    background-color: #ffffff;
+    background-image: url(../Banco-de-imagens/terra1.png);
     background-size: 100%;
-    color: white;
+    color: #191919;
     transition: 0.5s;
   }
   /* Estilo do botão */
