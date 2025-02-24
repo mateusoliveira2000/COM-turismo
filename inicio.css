@@ -3,11 +3,13 @@ body  {
     color: #ffffff;
     background-color: #191919;
     background-image: url(./Banco-de-imagens/terra.png);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     margin: 0px;
     transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
       }
+
 
 
 /* styles.css */
@@ -41,9 +43,9 @@ body  {
 
 
 
-#pai{
+#barra{
     margin-left: auto; margin-right: auto;
-    width: 60%; height: 350px;
+    width: 80%; height: 350px;
     position: relative; top: 10px;
 }
 @media (max-width: 920px){
