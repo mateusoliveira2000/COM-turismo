@@ -6,14 +6,17 @@ body  {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    margin-left: 10%; margin-right: 10%;
+    margin: 0%;
     transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
       }
   #conteudo{
+    margin-left: auto; margin-right: auto;
     position: relative;
-    width: 100%;
+    width: 80%;
 }
-
+.space{
+    width: 80%; height: 20px;
+  }
 
 
 /*HOMEBAR*/
@@ -191,7 +194,7 @@ h1{
 #map { 
     margin-left: auto; margin-right: auto;
     position: relative;
-    height: 800px; width: 99%;
+    height: 800px; width: 100%;
     border-radius: 8px;
 }
 
@@ -201,10 +204,10 @@ h1{
 #header{
     margin-left: auto; margin-right: auto;
     position: relative;
-    border-radius: 10px 10px 6px 6px;
+    border-radius: 6px;
     width: 100%;
     background-color: #fa621b;
-    padding-bottom: 8px;
+    
 }
 .contain {
     display: flex;
