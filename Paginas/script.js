@@ -1,3 +1,4 @@
+//BOTÃO DE MODO NOTURNO--------------------------------------------------------------------------
 // script.js
 const toggleButton = document.getElementById("toggleMode");
 
@@ -17,4 +18,20 @@ toggleButton.addEventListener("click", () => {
         localStorage.setItem("darkMode", "disabled");
     }
 });
+//BOTÃO DE MODO NOTURNO--------------------------------------------------------------------------
 
+
+
+
+
+//BOTÃO PARA EXIBIR CONTEUDO DA PAGINA INICIAL---------------------------------------------------
+function mostrarConteudo() {
+    document.getElementById("ocuto").classList.add("show");
+}
+
+window.addEventListener("scroll", function() {
+    if (window.scrollY === 0) {
+        document.getElementById("ocuto").classList.remove("show");
+    }
+});
+//BOTÃO PARA EXIBIR CONTEUDO DA PAGINA INICIAL---------------------------------------------------
