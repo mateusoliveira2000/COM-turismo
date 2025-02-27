@@ -1,5 +1,5 @@
 body  {
-    font-family: Century Gothic;
+    font-family: nunito;
     color: #ffffff;
     background-color: #191919;
     background-image: url(./Banco-de-imagens/terra.png);
@@ -29,7 +29,7 @@ body  {
     color: white;
     border: solid;
     border-color: #fa621b;
-    width: 45px; height: 100%;
+    width: 45px; height: 45px;
     cursor: pointer;
     border-radius: 30px;
     transition: 0.5s;
@@ -41,53 +41,24 @@ body  {
 
 
 
-
-
 #barra{
     margin-left: auto; margin-right: auto;
     width: 80%; height: 350px;
     position: relative; top: 10px;
 }
-@media (max-width: 920px){
-    #pai {
-        width: 70%;
-    }}
-@media (max-width: 660px){
-    #pai {
-            width: 80%;
-    }}
-@media (max-width: 660px){
-    #pai {
-            width: 95%;
-    }}
-@media (max-width: 380px){
-    #pai {
-            width: 95%; height: 400px;
-    }}
 #header {
     text-align: center;
     background-color: #fa621b;
     width: 100%; height: 50px;
     margin-left: auto; margin-right: auto;
     display: flex;
+    align-items: center;
+    text-align: center;
     justify-content: center; justify-content: space-around;
     border-radius: 30px;
     position: sticky; top: 5px;
     font-size: 100%;
 }
-@media (max-width: 920px){
-    #header {
-        font-size: 12px;
-        height: 45px;
-    }
-}
-@media (max-width: 380px){
-    #header{
-            flex-direction: flex;
-            width: 100%; height: 45px;
-            text-align: center;
-            margin-right: 100%;
-    }}
 .logo{
     background-image: url(./Banco-de-imagens/button/logo.svg);
     background-size: cover;
@@ -102,18 +73,9 @@ body  {
     border-radius: 40px;
     position: relative;
     text-align: center;
+    align-items: center;
 }
-@media (max-width: 920px){
-    .logo {
-        padding: 8px;
-    }
-}
-@media (max-width: 330px){
-    .logo {
-        width: 0px; height: 0px;
-        padding: 0px;
-    }
-}
+
 .nav {
     color: #ffffff;
     text-decoration-line: none;
@@ -121,41 +83,6 @@ body  {
     font-weight: 700;
     padding: 15px;
     transition: 0.3s ease-in-out;
-    
-}
-@media (max-width: 660px){
-    .nav {
-        padding-left: 10px; padding-right: 10px;
-    }}
-@media (max-width: 430px){
-    .nav {
-        padding-left: 5px; padding-right: 5px;
-    }}
-@media (max-width: 380px){
-    .nav{
-            font-size: 10px;
-    }}
-html {
-    scroll-behavior: smooth;
-  }
-      
-    
-
-#titulo {
-    position: relative;
-    top: 200px;
-    display: flex;
-    justify-self: center;
-    height: 600px;
-}
-@media (max-width: 970px) {
-    #titulo {
-        display: flex;
-        justify-self: center;
-        height: 600px;
-        font-size: 100%;                      
-    }}
-.nav{
     width: 80px; height: 100%x;
     display: flex;
     align-items: center;
@@ -167,119 +94,125 @@ html {
     background-color: #ed8544;
     border-radius: 30px;
 }
-
-
+html {
+    scroll-behavior: smooth;
+  }
+ 
+  
+    
+/*TITULO HOME*/
+#titulo {
+    margin-left: auto; margin-right: auto;
+    width: 80%; height: 120px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
 .title1{
+    font-weight: 900;
     color: #fa621b;
+    width: 330px;
     font-size: 800%;
-    font-weight: 800;
-    position: relative;
-    bottom: 300px;
 }   
-@media (max-width: 970px) {
-    .title1 {
-        margin-left: auto; margin-right: auto;   
-        font-size: 500%;
-        margin-top: 120px; 
-    }}
-@media (max-width: 670px) {
-    .title1 {
-    margin-left: auto; margin-right: auto;
-    font-size: 300%;
-    margin-top: 130px;                             
-    }}
-@media (max-width: 470px) {
-    .title1 {
-    margin-left: auto; margin-right: auto;
-    font-size: 200%;   
-    margin-top: 150px;                          
-    }}
-@media (max-width: 380px){
-    .title1{
-            margin-top: 10px;
-    }}
-@media (max-width: 330px){
-    .title1 {
-            bottom: 150px;
-    }} 
-
-
 .title2{
+    font-weight: 200;
+    width: 560px;
     font-size: 800%;
-    font-weight: 100;
-    position: relative;
-    bottom: 300px;
-}   
-@media (max-width: 970px) {
-    .title2 {
+}                
+.descri{
     margin-left: auto; margin-right: auto;
-    font-size: 500%;
-    margin-top: 120px; 
-    }}
-@media (max-width: 670px) {
-    .title2 {
+    text-transform: uppercase;
+    width: 80%; height: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+}
+.p {
     margin-left: auto; margin-right: auto;
-    font-size: 300%;
-    margin-top: 130px;                             
-    }}
-@media (max-width: 470px) {
-    .title2 {
+    font-size: 20px;
+    letter-spacing: 28px;
+    text-transform: uppercase;
+}
+.espaco {
     margin-left: auto; margin-right: auto;
-    font-size: 200%;   
-    margin-top: 150px;                          
-    }}
-@media (max-width: 380px){
-    .title2{
-        margin-top: 10px;
-    }}
-@media (max-width: 330px){
-    .title2 {
-            bottom: 150px;
-    }} 
-                            
+    width: 80%; height: 300px;
+}
+.conteudo{
+    margin-left: auto; margin-right: auto;
+    width: 330px; height: 100%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+.conteudo-espaco{
+    padding: 15px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
 
-                            
+/*CIDADES*/
+.descri1{
+    margin-left: auto; margin-right: auto;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+    width: 80%; height: 100px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+.decor{
+    border-left: 1cm solid #fa621b;
+    border-radius: 15px 5px 5px 15px;
+    padding-left: 5px;
+}
 
-                            
+/*BOTÃO PARAS EXIBIR CONTEUDO*/
+.show {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+.btn {
+    display: block;
+    width: 60px; height: 60px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #fa621b;
+    background-image: url(./Banco-de-imagens/car-terra.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    border-radius: 50%;
+    transition: background 0.3s;
+    animation: is-rotating 5s infinite;
+}
+@keyframes is-rotating {
+    to {
+        transform: rotate(360deg);
+    }
+}
+.btn:hover {
+    background-color: #191919;
+}
+#ocuto{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+}
+/*BOTÃO PARAS EXIBIR CONTEUDO*/
 
 #lugares {
     margin-left: auto; margin-right: auto;
     position: relative;
-    top: 5cm;
-    margin-bottom: 10cm;
     display: grid;
     grid-template-columns: 200px 200px 200px;
     place-items: center;
-    width: 1400px;
-    justify-content: space-around;}
-    @media (max-width: 1440px) {
-        #lugares {
-        width: 1000px;
-        }}
-    @media (max-width: 1040px) {
-        #lugares {
-        width: 600px; height: 800px;
-        grid-template-columns: 200px 200px
-    }}
-    @media (max-width: 630px) {
-        #lugares {
-        width: 400px; height: 600px;
-        grid-template-columns: 200px;
-    }}
-    @media (max-width: 430px) {
-        #lugares {
-        width: 300px; height: 1100px;
-        grid-template-columns: 200px
-    }}
-    @media (max-width: 330px){
-        #lugares {
-            width: 200px; height: 1100px;
-        }}
-  
-.size{
-    margin-top: 100px;
+    width: 80%;
+    justify-content: space-around;
 }
-                           
+                
 .busan {
     width: 270px; height: 160px;
     text-transform: uppercase;
@@ -297,9 +230,7 @@ html {
     display: inline-block;
     cursor: pointer;
     border-radius: 8px;
-    transition: transform 0.5s ease;
-    
-    
+    transition: transform 0.5s ease;   
 }
         @keyframes pulse {
             0% {
@@ -315,22 +246,6 @@ html {
           .busan:hover {
               animation: pulse 2s infinite;      
         }
-        @media (max-width: 1440px) {
-            .busan {
-            width: 230px; height: 130px;
-            text-transform: uppercase;
-            font-family: Josefin Sans;
-            font-size: 25px; 
-            }}   
-        @media (max-width: 630px) {
-            .busan {
-            width: 300px; height: 150px;
-            }}     
-        @media (max-width: 330px){
-            .busan {
-                width: 200px; height: 100px;
-            }}  
-
 
 .dublin {
     width: 270px; height: 160px;
@@ -350,29 +265,10 @@ html {
     cursor: pointer;
     border-radius: 8px;
     transition: transform 0.5s ease;
-    
-    
 }
 .dublin:hover {
     animation: pulse 2s infinite;        
 }
-@media (max-width: 1440px) {
-    .dublin {
-    width: 230px; height: 130px;
-    text-transform: uppercase;
-    font-family: Josefin Sans;
-    font-size: 25px;
-    margin-top: 50px;         
-    }}  
-@media (max-width: 630px) {
-    .dublin {
-    width: 300px; height: 150px;
-    }}  
-@media (max-width: 330px){
-    .dublin {
-        width: 200px; height: 100px;
-    }} 
-
 
 .roma {
     width: 270px; height: 160px;
@@ -393,29 +289,10 @@ html {
     cursor: pointer;
     border-radius: 8px;
     transition: transform 0.5s ease;
-    
-    
 }
 .roma:hover {
     animation: pulse 2s infinite;        
 }
-@media (max-width: 1440px) {
-    .roma {
-    width: 230px; height: 130px;
-    text-transform: uppercase;
-    font-family: Josefin Sans;
-    font-size: 25px;    
-    margin-top: 50px;    
-    }}  
-@media (max-width: 630px) {
-    .roma {
-    width: 300px; height: 150px;
-    }}  
-@media (max-width: 330px){
-    .roma {
-        width: 200px; height: 100px;
-    }} 
-
 
 .paris {
     width: 270px; height: 160px;
@@ -441,23 +318,6 @@ html {
 .paris:hover {
     animation: pulse 2s infinite;        
 }
-@media (max-width: 1440px) {
-    .paris {
-    width: 230px; height: 130px;
-    text-transform: uppercase;
-    font-family: Josefin Sans;
-    font-size: 25px;
-    margin-top: 50px;         
-    }}  
-@media (max-width: 630px) {
-    .paris {
-    width: 300px; height: 150px;
-    }}  
-@media (max-width: 330px){
-    .paris {
-        width: 200px; height: 100px;
-    }} 
-
 
 .toronto {
     width: 270px; height: 160px;
@@ -483,23 +343,6 @@ html {
 .toronto:hover {
     animation: pulse 2s infinite;        
 }
-@media (max-width: 1440px) {
-    .toronto {
-    width: 230px; height: 130px;
-    text-transform: uppercase;
-    font-family: Josefin Sans;
-    font-size: 25px;
-    margin-top: 50px;          
-    }}  
-@media (max-width: 630px) {
-    .toronto {
-    width: 300px; height: 150px;
-    }}  
-@media (max-width: 330px){
-    .toronto {
-        width: 200px; height: 100px;
-    }} 
-
 
 .grecia {
     width: 270px; height: 160px;
@@ -523,6 +366,302 @@ html {
 .grecia:hover {
     animation: pulse 2s infinite;        
 }
+.espaco1 {
+    width: 80%; height: 200px;
+}
+
+
+
+/*RESPONSIVIDADE*/
+/*CABEÇALHO*/
+@media (max-width: 920px){
+    #header {
+        font-size: 12px;
+        height: 45px;
+    }
+}
+@media (max-width: 380px){
+    #header{
+        flex-direction: flex;
+        width: 100%; height: 45px;
+        text-align: center;
+        margin-right: 100%;
+    }}
+
+
+/*BOTÃO MODO NOTURNO*/
+@media (max-width: 280px){
+    #toggleMode {
+            width: 0px; height: 0px;
+            padding: 0px;
+        }
+    }
+
+
+/*BARRA SUPERIOR*/
+@media (max-width: 920px){
+    #barra {
+        width: 80%;
+    }}
+@media (max-width: 700px){
+    #barra {
+            width: 95%; height: 300px;
+    }}
+@media (max-width: 380px){
+    #barra {
+            width: 95%; height: 250px;
+    }}
+
+
+/*LOGO*/
+@media (max-width: 920px){
+    .logo {
+        padding: 8px;
+    }
+}
+@media (max-width: 450px){
+    .logo {
+        width: 0px; height: 0px;
+        padding: 0px;
+    }
+}
+
+
+/*BOTÕES DA BARRA*/
+@media (max-width: 660px){
+    .nav {
+        padding-left: 8px; padding-right: 8px;
+    }}
+@media (max-width: 480px){
+    .nav {
+        padding-left: 5px; padding-right: 5px;
+    }}
+@media (max-width: 380px){
+    .nav{
+            font-size: 10px;
+    }}
+
+    
+/*TEXTO INICIAL*/
+@media (max-width: 1125px) {
+    .title1 {
+        margin-left: auto; margin-right: auto;   
+        font-size: 600%;
+        width: 250px;
+        box-sizing: border-box;
+        }
+    .title2 {
+        margin-left: auto; margin-right: auto;
+        font-size: 600%;
+        width: 400px;
+        box-sizing: border-box;
+        }
+    .descri{
+        width: 60%;
+    }
+        
+    .p {
+        margin-left: auto; margin-right: auto;
+        font-size: 15px;
+        letter-spacing: 15px;
+    }
+
+    #titulo {
+        width: 60%; height: 80px;
+    }
+}
+@media (max-width: 1000px) {
+    .title1 {
+        margin-left: auto; margin-right: auto;   
+        font-size: 500%;
+        }
+    .title2 {
+        margin-left: auto; margin-right: auto;
+        font-size: 500%;
+        }
+    .descri{
+        height: 35px;
+    }
+    .espaco{
+        height: 320px;
+    }
+    .p {
+        margin-left: auto; margin-right: auto;
+        font-size: 10px;
+        letter-spacing: 12px;
+    }
+}
+@media (max-width: 670px) {
+    .title1 {
+        margin-left: auto; margin-right: auto;
+        font-size: 300%;                            
+    }
+    .title2 {
+        margin-left: auto; margin-right: auto;
+        font-size: 300%;                          
+    }
+    .descri{
+        height: 30px;
+    }
+    .espaco{
+        height: 350px;
+    }
+    .p {
+        margin-left: auto; margin-right: auto;
+        font-size: 10px;
+        letter-spacing: 5px;
+    }
+    #titulo {
+        width: 60%; height: 50px;
+    }
+}
+@media (max-width: 470px) {
+    .title1 {
+    margin-left: auto; margin-right: auto;
+    font-size: 200%;               
+    }
+    .title2 {
+     margin-left: auto; margin-right: auto;
+     font-size: 200%;                            
+     }
+  .p {
+     margin-left: auto; margin-right: auto;
+     font-size: 8px;
+     letter-spacing: 3px;
+ }
+}
+
+
+
+/*BOTÃO EXIBIR*/
+@media (max-width: 470px) {
+    .conteudo-espaco {
+        font-size: 11px;
+        padding: 0px 12px 0px 10px;              
+    }
+    .conteudo {
+        width: 280px;
+    }
+}
+@media (max-width: 380px) {
+    .conteudo-espaco {
+        font-size: 8px;               
+    }
+    .conteudo {
+        width: 255px;
+    }
+}
+
+/*LUGARES*/
+@media (max-width: 1040px) {
+    #lugares {
+    grid-template-columns: 200px 200px
+}}
+@media (max-width: 630px) {
+    #lugares {
+    grid-template-columns: 200px;
+}
+    .decor{
+        font-size: 20px;
+        letter-spacing: 15px;
+    }}
+@media (max-width: 430px) {
+    #lugares {
+    grid-template-columns: 200px
+}
+    .decor{
+        font-size: 15px;
+        letter-spacing: 10px;
+}}
+
+
+
+/*BUSAN*/
+@media (max-width: 1440px) {
+    .busan {
+    width: 230px; height: 130px;
+    text-transform: uppercase;
+    font-family: Josefin Sans;
+    font-size: 25px; 
+    }}   
+@media (max-width: 630px) {
+    .busan {
+    width: 300px; height: 150px;
+    }}     
+@media (max-width: 330px){
+    .busan {
+        width: 200px; height: 100px;
+    }}  
+/*DUBLIN*/
+@media (max-width: 1440px) {
+    .dublin {
+    width: 230px; height: 130px;
+    text-transform: uppercase;
+    font-family: Josefin Sans;
+    font-size: 25px;
+    margin-top: 50px;         
+    }}  
+@media (max-width: 630px) {
+    .dublin {
+    width: 300px; height: 150px;
+    }}  
+@media (max-width: 330px){
+    .dublin {
+        width: 200px; height: 100px;
+    }}
+
+/*ROMA*/
+@media (max-width: 1440px) {
+    .roma {
+    width: 230px; height: 130px;
+    text-transform: uppercase;
+    font-family: Josefin Sans;
+    font-size: 25px;    
+    margin-top: 50px;    
+    }}  
+@media (max-width: 630px) {
+    .roma {
+    width: 300px; height: 150px;
+    }}  
+@media (max-width: 330px){
+    .roma {
+        width: 200px; height: 100px;
+    }}
+/*PARIS*/
+@media (max-width: 1440px) {
+    .paris {
+    width: 230px; height: 130px;
+    text-transform: uppercase;
+    font-family: Josefin Sans;
+    font-size: 25px;
+    margin-top: 50px;         
+    }}  
+@media (max-width: 630px) {
+    .paris {
+    width: 300px; height: 150px;
+    }}  
+@media (max-width: 330px){
+    .paris {
+        width: 200px; height: 100px;
+    }} 
+/*TORONTO*/
+@media (max-width: 1440px) {
+    .toronto {
+    width: 230px; height: 130px;
+    text-transform: uppercase;
+    font-family: Josefin Sans;
+    font-size: 25px;
+    margin-top: 50px;          
+    }}  
+@media (max-width: 630px) {
+    .toronto {
+    width: 300px; height: 150px;
+    }}  
+@media (max-width: 330px){
+    .toronto {
+        width: 200px; height: 100px;
+    }} 
+/*GRECIA*/
 @media (max-width: 1440px) {
     .grecia {
     width: 230px; height: 130px;
