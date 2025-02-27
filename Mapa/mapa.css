@@ -183,7 +183,7 @@ h1{
     border: none;
     background: #fa621b;
     color: white;
-    border-radius: 5px;
+    border-radius: 30px;
     transition: 0.3s;
 }
 #botao-map:hover {
