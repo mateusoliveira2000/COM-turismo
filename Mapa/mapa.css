@@ -151,12 +151,14 @@ h1{
 .baixo {
     position: relative;
     margin-left: auto; margin-right: auto;
-    width: 30px; height: 30px;
+    width: 25px; height: 25px;
     margin-left: auto; margin-right: auto;
+    background-color: #fa621b;
     background-image: url(../Banco-de-imagens/button/baixo.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    border: 3px;
+    border: 8px solid #fa621b;
+    border-radius: 50%;
     animation: subirDescer 2s infinite ease-in-out;
 }
 /* Animação de subir e descer */
