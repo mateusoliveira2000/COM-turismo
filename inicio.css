@@ -70,7 +70,7 @@ body  {
     font-size: 16px;
     margin: 4px;
     cursor: pointer;
-    border-radius: 40px;
+    border-radius: 30px;
     position: relative;
     text-align: center;
     align-items: center;
@@ -83,7 +83,7 @@ body  {
     font-weight: 700;
     padding: 15px;
     transition: 0.3s ease-in-out;
-    width: 80px; height: 100%x;
+    width: 90px; height: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,7 +103,7 @@ html {
 /*TITULO HOME*/
 #titulo {
     margin-left: auto; margin-right: auto;
-    width: 80%; height: 120px;
+    width: 80%; height: 140px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -112,12 +112,12 @@ html {
 .title1{
     font-weight: 900;
     color: #fa621b;
-    width: 330px;
+    width: 330px; height: 100%;
     font-size: 800%;
 }   
 .title2{
     font-weight: 200;
-    width: 560px;
+    width: 435px; height: 100%;
     font-size: 800%;
 }                
 .descri{
@@ -132,20 +132,27 @@ html {
 .p {
     margin-left: auto; margin-right: auto;
     font-size: 20px;
-    letter-spacing: 28px;
+    letter-spacing: 25px;
     text-transform: uppercase;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    
 }
 .espaco {
     margin-left: auto; margin-right: auto;
     width: 80%; height: 300px;
 }
-.conteudo{
+#cont{
     margin-left: auto; margin-right: auto;
-    width: 330px; height: 100%;
+    width: 80%; height: 100%;
     display: flex;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
     text-align: center;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
 }
 .conteudo-espaco{
     padding: 15px;
@@ -174,6 +181,10 @@ html {
     opacity: 1 !important;
     visibility: visible !important;
 }
+.hide {
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
 .btn {
     display: block;
     width: 60px; height: 60px;
@@ -201,8 +212,9 @@ html {
     visibility: hidden;
     transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
 }
-/*BOTÃO PARAS EXIBIR CONTEUDO*/
 
+
+/*BOTÃO PARAS EXIBIR CONTEUDO*/
 #lugares {
     margin-left: auto; margin-right: auto;
     position: relative;
@@ -445,38 +457,32 @@ html {
 /*TEXTO INICIAL*/
 @media (max-width: 1125px) {
     .title1 {
-        margin-left: auto; margin-right: auto;   
-        font-size: 600%;
-        width: 250px;
+        font-size: 90px;
+        width: 235px;
         box-sizing: border-box;
         }
     .title2 {
-        margin-left: auto; margin-right: auto;
-        font-size: 600%;
-        width: 400px;
+        font-size: 90px;
+        width: 320px;
         box-sizing: border-box;
         }
-    .descri{
-        width: 60%;
-    }
         
     .p {
-        margin-left: auto; margin-right: auto;
         font-size: 15px;
         letter-spacing: 15px;
     }
 
     #titulo {
-        width: 60%; height: 80px;
+        width: 80%; height: 120px;
     }
 }
 @media (max-width: 1000px) {
     .title1 {
-        margin-left: auto; margin-right: auto;   
+        width: 210px;
         font-size: 500%;
         }
     .title2 {
-        margin-left: auto; margin-right: auto;
+        width: 280px;
         font-size: 500%;
         }
     .descri{
@@ -493,12 +499,12 @@ html {
 }
 @media (max-width: 670px) {
     .title1 {
-        margin-left: auto; margin-right: auto;
-        font-size: 300%;                            
+        font-size: 300%;
+        width: 130px;                            
     }
     .title2 {
-        margin-left: auto; margin-right: auto;
-        font-size: 300%;                          
+        font-size: 300%;
+        width: 180px;                             
     }
     .descri{
         height: 30px;
@@ -508,49 +514,118 @@ html {
     }
     .p {
         margin-left: auto; margin-right: auto;
-        font-size: 10px;
-        letter-spacing: 5px;
+        font-size: 12px;
+        letter-spacing: 8px;
     }
     #titulo {
-        width: 60%; height: 50px;
+        width: 80%; height: 60px;
     }
 }
 @media (max-width: 470px) {
     .title1 {
-    margin-left: auto; margin-right: auto;
-    font-size: 200%;               
-    }
+        margin: 0px; padding: 0px;
+        width: 100%; height: 80px;
+        display: flex;
+        font-size: 90px;       
+        align-items: center;   
+        justify-content: center;
+        }
     .title2 {
-     margin-left: auto; margin-right: auto;
-     font-size: 200%;                            
+        margin: 0px; padding: 0px;
+        width: 100%; height: 80px;
+        font-size: 80px; 
+        display: flex;
+        font-size: 65px;       
+        align-items: center;   
+        justify-content: center;          
+         }
+    .p {
+        font-size: 10px;
+        letter-spacing: 10px;
+     }
+    #titulo{
+        height: 160px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0; /* Remove qualquer espaçamento extra */
+    
      }
   .p {
      margin-left: auto; margin-right: auto;
      font-size: 8px;
      letter-spacing: 3px;
+}
+}
+@media (max-width: 300px) {
+.title1 {
+    margin: 0px; padding: 0px;
+    width: 100%; height: 80px;
+    display: flex;
+    font-size: 60px;       
+    align-items: center;   
+    justify-content: center;
+    }
+.title2 {
+    margin: 0px; padding: 0px;
+    width: 100%; height: 80px;
+    font-size: 50px; 
+    display: flex;     
+    align-items: center;   
+    justify-content: center;          
+     }
+.p {
+    font-size: 8px;
+    letter-spacing: 3px;
+ }
+#titulo{
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0; /* Remove qualquer espaçamento extra */
+
  }
 }
 
 
 
 /*BOTÃO EXIBIR*/
+@media (max-width: 670px) {
+    .btn {
+        width: 50px; height: 50px;            
+    }
+    .conteudo-espaco {
+        font-size: 12px;
+    }
+}
 @media (max-width: 470px) {
     .conteudo-espaco {
         font-size: 11px;
         padding: 0px 12px 0px 10px;              
     }
-    .conteudo {
-        width: 280px;
+    #cont {
+        width: 270px;
     }
 }
 @media (max-width: 380px) {
     .conteudo-espaco {
         font-size: 8px;               
     }
-    .conteudo {
-        width: 255px;
+    #cont {
+        width: 80%; height: 150px;
     }
-}
+    .btn {
+        width: 40px; height: 40px;
+    }}
+@media (max-width: 350px) {
+        #cont{
+            width: 80%; height: 110px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0; /* Remove qualquer espaçamento extra */
+         }}
 
 /*LUGARES*/
 @media (max-width: 1040px) {
@@ -572,7 +647,13 @@ html {
     .decor{
         font-size: 15px;
         letter-spacing: 10px;
-}}
+}
+@media (max-width: 260px){
+    .decor{
+
+    }
+}
+}
 
 
 
@@ -592,6 +673,11 @@ html {
     .busan {
         width: 200px; height: 100px;
     }}  
+@media (max-width: 260px){
+    .busan{
+        width: 120px; height: 80px;
+        font-size: 15px;
+    }}
 /*DUBLIN*/
 @media (max-width: 1440px) {
     .dublin {
@@ -608,6 +694,11 @@ html {
 @media (max-width: 330px){
     .dublin {
         width: 200px; height: 100px;
+    }}
+@media (max-width: 260px){
+    .dublin{
+        width: 120px; height: 80px;
+        font-size: 15px;
     }}
 
 /*ROMA*/
@@ -627,6 +718,11 @@ html {
     .roma {
         width: 200px; height: 100px;
     }}
+@media (max-width: 260px){
+    .roma{
+        width: 120px; height: 80px;
+        font-size: 15px;
+    }}
 /*PARIS*/
 @media (max-width: 1440px) {
     .paris {
@@ -643,7 +739,12 @@ html {
 @media (max-width: 330px){
     .paris {
         width: 200px; height: 100px;
-    }} 
+    }}
+@media (max-width: 260px){
+    .paris{
+        width: 120px; height: 80px;
+        font-size: 15px;
+    }}
 /*TORONTO*/
 @media (max-width: 1440px) {
     .toronto {
@@ -660,7 +761,12 @@ html {
 @media (max-width: 330px){
     .toronto {
         width: 200px; height: 100px;
-    }} 
+    }}
+@media (max-width: 260px){
+    .toronto{
+        width: 120px; height: 80px;
+        font-size: 15px;
+    }}
 /*GRECIA*/
 @media (max-width: 1440px) {
     .grecia {
@@ -677,4 +783,9 @@ html {
 @media (max-width: 330px){
     .grecia {
         width: 200px; height: 100px;
-    }} 
+    }}
+@media (max-width: 260px){
+    .grecia{
+        width: 120px; height: 80px;
+        font-size: 15px;
+    }}
