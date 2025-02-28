@@ -27,11 +27,30 @@ toggleButton.addEventListener("click", () => {
 //BOTÃO PARA EXIBIR CONTEUDO DA PAGINA INICIAL---------------------------------------------------
 function mostrarConteudo() {
     document.getElementById("ocuto").classList.add("show");
+    document.getElementById("cont").classList.add("hide");
 }
 
 window.addEventListener("scroll", function() {
     if (window.scrollY === 0) {
-        document.getElementById("ocuto").classList.remove("show");
+    document.getElementById("ocuto").classList.remove("show");
     }
 });
+
+
+
+let lastScrollTop = 0;
+window.addEventListener("scroll", function() {
+    let currentScroll = window.scrollY;
+    let extraContent = document.getElementById("cont");
+    
+    if (currentScroll > lastScrollTop) {
+        // Rolando para baixo, esconde o conteúdo
+        extraContent.classList.add("hide");
+    } else {
+        // Rolando para cima, mostra o conteúdo
+        extraContent.classList.remove("hide");
+    }
+    lastScrollTop = currentScroll;
+});
+
 //BOTÃO PARA EXIBIR CONTEUDO DA PAGINA INICIAL---------------------------------------------------

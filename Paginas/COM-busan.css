@@ -2,7 +2,7 @@ body {
   margin: 0%;
   background-color: #191919;
   color: #ffffff;
-  font-family: Century Gothic;
+  font-family: nunito;
   transition: 0.5s;
 }
 
@@ -317,6 +317,10 @@ body {
   #conteudo {
     width: 100%;
   }}
+
+
+
+
 
 
 @media (max-width: 600px) {
