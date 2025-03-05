@@ -86,7 +86,6 @@ html {
   scroll-behavior: smooth;
 }
 .ir-inicio{
-
   background-color: rgb(250, 98, 27);
   background-image: url(../Banco-de-imagens/button/home.svg);
   background-position: center;
@@ -120,7 +119,7 @@ animation: pulse 1s infinite;
 
 /*ESPACO*/
 #caixa-texto {
-    width: 100%; height: 350px;
+    width: 100%; height: 270px;
     display: flex;
     text-transform: uppercase;  
     align-items: center;
@@ -146,19 +145,16 @@ h1{
     position: relative;
     width: 100%; height: 500px;
     display: flex;
-    align-items: center;
 }
 .baixo {
     position: relative;
     margin-left: auto; margin-right: auto;
     width: 25px; height: 25px;
     margin-left: auto; margin-right: auto;
-    background-color: #fa621b;
-    background-image: url(../Banco-de-imagens/button/baixo.svg);
+    background-color: #fa621b00;
+    background-image: url(../Banco-de-imagens/button/baixo-laranja.png);
     background-size: contain;
     background-repeat: no-repeat;
-    border: 8px solid #fa621b;
-    border-radius: 50%;
     animation: subirDescer 2s infinite ease-in-out;
 }
 /* Animação de subir e descer */
