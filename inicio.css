@@ -140,27 +140,11 @@ html {
     padding: 0px;
     display: flex;
     justify-content: center;
-    
 }
+
 .espaco {
     margin-left: auto; margin-right: auto;
     width: 80%; height: 300px;
-}
-#cont{
-    margin-left: auto; margin-right: auto;
-    width: 80%; height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    opacity: 1;
-    visibility: visible;
-    transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
-}
-.conteudo-espaco{
-    padding: 15px;
-    text-transform: uppercase;
-    letter-spacing: 5px;
 }
 
 /*CIDADES*/
@@ -179,45 +163,20 @@ html {
     padding-left: 5px;
 }
 
+
 /*BOTÃO PARAS EXIBIR CONTEUDO*/
 .show {
     opacity: 1 !important;
     visibility: visible !important;
-}
-.hide {
-    opacity: 0 !important;
-    visibility: hidden !important;
-}
-.btn {
-    display: block;
-    width: 60px; height: 60px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #fa621b;
-    background-image: url(./Banco-de-imagens/car-terra.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: none;
-    border-radius: 50%;
-    transition: background 0.3s;
-    animation: is-rotating 5s infinite;
-}
-@keyframes is-rotating {
-    to {
-        transform: rotate(360deg);
-    }
-}
-.btn:hover {
-    background-color: #191919;
 }
 #ocuto{
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
 }
-
-
 /*BOTÃO PARAS EXIBIR CONTEUDO*/
+
+
 #lugares {
     margin-left: auto; margin-right: auto;
     position: relative;
@@ -399,12 +358,15 @@ html {
 
 
 /*BOTÃO MODO NOTURNO*/
+@media (max-width: 380px){
+    #toggleMode {
+            width: 40px; height: 40px;
+    }}
 @media (max-width: 280px){
     #toggleMode {
             width: 0px; height: 0px;
             padding: 0px;
-        }
-    }
+        }}
 
 
 /*BARRA SUPERIOR*/
@@ -436,6 +398,7 @@ html {
 }
 
 
+
 /*BOTÕES DA BARRA*/
 @media (max-width: 660px){
     .nav {
@@ -451,7 +414,7 @@ html {
     }}
 
     
-/*TEXTO INICIAL*/
+/*TEXTO INICIAL E ESPAÇOS*/
 @media (max-width: 1125px) {
 .title1 {
     font-size: 90px;
@@ -472,50 +435,90 @@ html {
     width: 80%; height: 120px;
 }
 }
-@media (max-width: 1000px) {
-.title1 {
-    width: 210px;
-    font-size: 500%;
+@media (max-width: 1050px) {
+    .espaco1 {
+    height: 100px;
     }
-.title2 {
-    width: 280px;
-    font-size: 500%;
+    .title1 {
+        margin: 0px; padding: 0px;
+        width: 100%; height: 50%;
+        display: flex;
+        font-size: 150px;       
+        align-items: center;   
+        justify-content: center;
+        box-sizing: border-box;
+        }
+    .title2 {
+        margin: 0px; padding: 0px;
+        width: 100%; height: 50%;
+        font-size: 110px; 
+        display: flex;     
+        align-items: center;   
+        justify-content: center;      
+        box-sizing: border-box;    
+         }
+    .p {
+        font-size: 16px;
+        letter-spacing: 7px;
+     }
+    #titulo{
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0; /* Remove qualquer espaçamento extra */
+     }
+    .espaco{
+        height: 60px;
     }
-.descri{
-    height: 35px;
 }
-.espaco{
-    height: 320px;
+@media (max-width: 790px) {
+    .espaco {
+    height: 200px;
+    }
+    .espaco1{
+        height: 250px;
+    }
 }
-.p {
-    margin-left: auto; margin-right: auto;
-    font-size: 10px;
-    letter-spacing: 12px;
-}
-}
-@media (max-width: 670px) {
-.title1 {
-    font-size: 300%;
-    width: 130px;                            
-}
-.title2 {
-    font-size: 300%;
-    width: 180px;                             
-}
-.descri{
-    height: 30px;
-}
-.espaco{
-    height: 350px;
-}
-.p {
-    margin-left: auto; margin-right: auto;
-    font-size: 12px;
-    letter-spacing: 8px;
-}
-#titulo {
-    width: 80%; height: 60px;
-}
+@media (max-width: 1050px) {
+    .espaco1 {
+    height: 100px;
+    }
+    .title1 {
+        margin: 0px; padding: 0px;
+        width: 100%; height: 50%;
+        display: flex;
+        font-size: 80px;       
+        align-items: center;   
+        justify-content: center;
+        box-sizing: border-box;
+        }
+    .title2 {
+        margin: 0px; padding: 0px;
+        width: 100%; height: 50%;
+        font-size: 60px; 
+        display: flex;     
+        align-items: center;   
+        justify-content: center;      
+        box-sizing: border-box;    
+         }
+    .p {
+        font-size: 8px;
+        letter-spacing: 5px;
+     }
+     .descri{
+        height: 20px;
+     }
+    #titulo{
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0; /* Remove qualquer espaçamento extra */
+     }
+    .espaco{
+        height: 60px;
+    }
 }
 @media (max-width: 470px) {
 .title1 {
@@ -545,12 +548,16 @@ html {
     flex-direction: column;
     align-items: center;
     gap: 0; /* Remove qualquer espaçamento extra */
+    margin-top: 10px;
 
  }
 .p {
     margin-left: auto; margin-right: auto;
     font-size: 8px;
     letter-spacing: 3px;
+}
+.espaco{
+    height: 60px;
 }
 }
 @media (max-width: 300px) {
